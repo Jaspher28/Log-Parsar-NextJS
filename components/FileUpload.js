@@ -48,6 +48,7 @@ export default function FileUpload({ onFileUpload }) {
   return (
     <div className={styles.container}>
       <h2 className={styles.title}>Upload Log File</h2>
+      <p className={styles.sizeNotice}>(Supporting file format .log .txt)</p>
       <form
         className={`${styles.form} ${dragActive ? styles.dragActive : ""}`}
         onDragEnter={handleDrag}
